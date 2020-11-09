@@ -27,7 +27,6 @@ class LearningController extends AbstractController
 
     public function aboutMe()
     {
-
         return $this->render('learning/aboutme.html.twig');
     }
 
@@ -37,7 +36,6 @@ class LearningController extends AbstractController
 
     public function showMyName()
     {
-
         if (isset($_POST['name'])) {
             $this->name = $_POST['name'];
             return $this->render('learning/changeMyName.html.twig');
